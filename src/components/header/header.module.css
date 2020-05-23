@@ -1,0 +1,128 @@
+.mainCont {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    border-bottom: 2px solid #30a3ff;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    width: 80px;
+}
+
+.logo p{
+    font-family: var(--second-font);
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: -12px;
+    letter-spacing: -1px;
+    color: var(--text-color);
+}
+.logo p b{
+    letter-spacing:-2px;
+}
+
+.logo p .green{
+    color: var(--heading-color);
+}
+
+nav{
+    width: 525px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    transition: .1s ease-in-out;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.a:hover{
+    text-decoration: none;
+    outline: none;
+    color: #fefefe;
+    background: var(--text-color);
+    transform: scale(1.03);
+}
+
+@media(max-width: 1300px){
+    .mainCont {
+        height: 100px;
+        padding: 10px 70px;
+    }
+}
+@media(max-width: 992px){
+    nav{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .a{
+        width: 70px;
+        font-size: 14px;
+    }
+}
+@media(max-width: 768px){
+    .mainCont {
+        height: 80px;
+        padding: 10px 20px;
+    }
+    nav{
+        width: 370px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .a{
+        width: 70px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 572px){
+    .mainCont {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 80px;
+        padding: 10px 10px;
+    }
+    .logo{
+        height: 50px;
+    }
+    .logoImg{
+        width: 50px;
+    }
+
+    .logo p{
+        font-size: 30px;
+    }
+    nav{
+        min-width: 300px;
+        align-self: center;
+        width: inherit;
+        display: flex;
+    }
+
+    .a{
+        height: 20px;
+        width: unset;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+}

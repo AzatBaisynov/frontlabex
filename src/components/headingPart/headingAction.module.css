@@ -1,0 +1,133 @@
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: var(--heading-color);
+    line-height: 60px;
+}
+
+.actions {
+    height: 60px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.input{
+    height: 60px;
+    width: 430px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.btn{
+    width: 230px;
+    height: 100%;
+    border: 0;
+    background: var(--text-color);
+    font-size: 20px;
+    color: white;
+}
+.btn:hover{
+    background: var(--heading-color);
+}
+
+.img{
+    height: 300px;
+    width: 100%;
+    background: url("../../items/услуги3.jpg") center / cover;
+}
+
+
+@media(max-width: 992px){
+    .h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .actions {
+        height: 40px;
+        width: 500px;
+        margin-bottom: 30px;
+    }
+    .input{
+        height: 35px;
+        width: 325px;
+        font-size: 18px;
+    }
+
+    .btn{
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .img{
+         height: 200px;
+     }
+}
+@media(max-width: 768px){
+    .h1{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .actions {
+        height: 40px;
+        width: 450px;
+        margin-bottom: 30px;
+    }
+    .input{
+        height: 30px;
+        width: 310px;
+        font-size: 16px;
+    }
+
+    .btn{
+        width: 115px;
+        font-size: 14px;
+    }
+    .img{
+        height: 150px;
+    }
+}
+@media(max-width: 572px){
+    .mainCont{
+        padding: 0 10px;
+    }
+    .h1{
+        font-size: 26px;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .actions {
+        height: 30px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .input{
+        height: 25px;
+        width: 170px;
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+    .btn{
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .img{
+        height: 100px;
+        margin: 0 -10px;
+    }
+}
