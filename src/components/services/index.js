@@ -9,6 +9,7 @@ import specialists from  "../../items/услуги.jpg"
 function Services() {
     return (
         <div className={style.mainCont}>
+            
             <h2 className={style.h2}>Наши услуги</h2>
             <div className={style.serviceTable}>
                 <div className={style.serviceCell}>
@@ -32,22 +33,26 @@ function Services() {
                         <button className={style.btn}>Заказать услугу</button>
                     </div>
                 </div>
-                <div className={style.serviceCell}>
-                    <img src={teacher} alt="" className={style.img}/>
-                    <div className={style.tittle}>
-                        <p className={style.p}>Репетиторы и обучение</p>
-                        <button className={style.btn}>Заказать услугу</button>
-                    </div>
+
+            <div className={style.serviceTable2}>
+                <div className={style.serviceCell1}>
+                        <img src={teacher} alt="" className={style.img}/>
+                        <div className={style.tittle}>
+                            <p className={style.p}>Репетиторы и обучение</p>
+                            <button className={style.btn}>Заказать услугу</button>
+                        </div>
                 </div>
-                <div className={style.serviceCell}>
-                    <img src={specialists} alt="" className={style.img}/>
-                    <div className={style.tittle}>
-                        <p className={style.p}>Спецалисты на час/день/пост.</p>
-                        <button className={style.btn}>Заказать услугу</button>
+                <div className={style.serviceCell1}>
+                        <img src={specialists} alt="" className={style.img}/>
+                        <div className={style.tittle}>
+                            <p className={style.p}>Спецалисты на час/день/пост.</p>
+                            <button className={style.btn}>Заказать услугу</button>
+                        </div>
                     </div>
-                </div>
+                    
             </div>
-        </div>
+            </div>
+        </div>     
     )
 }
 

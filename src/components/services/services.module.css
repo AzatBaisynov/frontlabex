@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 150px;
+    padding: 120px 150px;
 }
 
 .h2{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .serviceTable{
@@ -15,12 +15,30 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.serviceTable2{
+    display: flex;
+    flex-wrap: wrap;
+    top: 140%;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .serviceCell{
     display: flex;
     padding: 0 5px;
     margin: 50px 0 0 0;
+}
+
+.serviceCell1{
+    display: flex;
+    padding: 0 5px;
+    margin: 50px 100px 0 100px;
 }
 
 .img{
